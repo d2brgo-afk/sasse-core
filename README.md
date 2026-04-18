@@ -1,25 +1,30 @@
-SASSE Core
+# SASSE Core
 
-Projeto autoral de arquitetura de sistemas focado em execução controlada e validação de instruções.
+Projeto autoral de arquitetura de sistemas focado em execução controlada, validação de instruções e organização por camadas.
 
-O que é
+## Visão geral
 
-A SASSE é um experimento de construção de sistemas onde:
+A SASSE explora uma estrutura onde:
 
-- Execução não é automática
-- Toda instrução passa por validação
-- O sistema mantém registro de estado (trace)
-- Há separação entre decisão e execução
+- instruções não são executadas automaticamente
+- a validação antecede a execução
+- o sistema registra estado e histórico
+- há separação entre julgamento lógico e processamento
 
-Objetivo
+## Estrutura do repositório
 
-Explorar:
+- `SDB-Corpus` → regras, princípios e validação
+- `Runtime-PAI` → processamento lógico
+- `Kernel-Rust` → execução
+- `MSPB-Trace` → rastreabilidade e histórico
+- `Semantic-Graph` → organização semântica
+- `Hologram-Veu` → interface e manifestação
 
-- Estrutura de runtime
-- Controle de fluxo de execução
-- Organização de sistemas de baixo nível
-- Desenvolvimento em Rust
+## Arquitetura
 
-Status
+Veja o arquivo [`ARCHITECTURE.md`](./ARCHITECTURE.md) para uma visão geral da organização do sistema.
+
+## Status
 
 Em desenvolvimento.
+Estrutura inicial pública organizada no GitHub.
